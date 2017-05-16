@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="18-struts2-ognl-putObjectToValueStack"
+  id="myeclipse.1490163854097"
+  context-root="/18-struts2-ognl-putObjectToValueStack"
+  j2ee-spec="5.0"
+  archive="18-struts2-ognl-putObjectToValueStack.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

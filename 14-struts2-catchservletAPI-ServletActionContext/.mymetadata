@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="14-struts2-catchservletAPI-ServletActionContext"
+  id="myeclipse.1490083437797"
+  context-root="/14-struts2-catchservletAPI-ServletActionContext"
+  j2ee-spec="5.0"
+  archive="14-struts2-catchservletAPI-ServletActionContext.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

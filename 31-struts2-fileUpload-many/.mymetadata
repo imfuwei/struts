@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="31-struts2-fileUpload-many"
+  id="myeclipse.1490591907217"
+  context-root="/31-struts2-fileUpload-many"
+  j2ee-spec="5.0"
+  archive="31-struts2-fileUpload-many.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

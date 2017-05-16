@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="demo" namespace="/" extends="struts-default">
+		<action name="login" class="com.zfw.actions.LoginAction"
+			method="execute">
+			<result name="success" type="dispatcher">dispatcher.jsp</result>
+		</action>
+		<action name="redirect" class="com.zfw.actions.LoginAction">
+			<result type="redirect">
+			<param name="location">/redirect.jsp</param>
+			<param name="name">${username}</param>
+			<param name="age">${age}</param>
+			</result>
+		
+		</action>
+	</package>
+</struts>

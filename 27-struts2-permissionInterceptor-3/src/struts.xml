@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="demo" namespace="/" extends="struts-default">
+		<!-- 第三种方法注册拦截器，声明拦截栈，直接修改struts-default中的默 认执行的拦截器栈-->
+		<interceptors>
+			<interceptor name="permissionInterceptor"
+				class="com.zfw.intercepts.PermissionInterceptor" />
+
+			<interceptor-stack name="myStack">
+				<interceptor-ref name="permissionInterceptor" />
+				<interceptor-ref name="defaultStack" />
+			</interceptor-stack>
+		</interceptors>
+		
+		<!-- 此标签是作用于全包的，所以action如果没有显式声明，则会执行这个默认的拦截器栈 -->
+		<default-interceptor-ref name="myStack"/>
+
+		<action name="login" class="com.zfw.actions.LoginAction"
+			method="doOne">
+			<result name="success">welcome.jsp</result>
+			<result name="fail">fail.jsp</result>
+		</action>
+	</package>
+</struts>

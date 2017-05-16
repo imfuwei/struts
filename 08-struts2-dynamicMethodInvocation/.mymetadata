@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="08-struts2-dynamicMethodInvocation"
+  id="myeclipse.1490006819709"
+  context-root="/08-struts2-dynamicMethodInvocation"
+  j2ee-spec="5.0"
+  archive="08-struts2-dynamicMethodInvocation.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

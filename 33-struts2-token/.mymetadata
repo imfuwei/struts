@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="33-struts2-token"
+  id="myeclipse.1489904055804"
+  context-root="/33-struts2-token"
+  j2ee-spec="5.0"
+  archive="33-struts2-token.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

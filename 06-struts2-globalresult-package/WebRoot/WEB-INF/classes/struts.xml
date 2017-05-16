@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<!-- 这样写代码会冗余 -->
+	<!-- <package name="demo" namespace="/" extends="struts-default"> <action 
+		name="doone" class="com.zfw.struts.LoginAction" method="doOne"> <result name="success">welcome.jsp</result> 
+		<result name="fail">fail.jsp</result> </action> <action name="dotwo" class="com.zfw.struts.LoginAction" 
+		method="doTwo"> <result name="success">welcome.jsp</result> <result name="fail">fail.jsp</result> 
+		<result name="old">old.jsp</result> </action> </package> -->
+
+	<!-- 包视图 ,这样写有一个好处，就是同package下action有相同的跳转页面，可以让action去引用<global-results>下的<result> -->
+	<!-- <package name="demo" namespace="/" extends="struts-default">
+		<global-results>
+			<result name="success">welcome.jsp</result>
+			<result name="fail">fail.jsp</result>
+		</global-results>
+		<action name="doone" class="com.zfw.struts.LoginAction" method="doOne" />
+		<action name="dotwo" class="com.zfw.struts.LoginAction" method="doTwo">
+			<result name="old">old.jsp</result>
+		</action>
+	</package> -->
+
+<!-- 全局视图 把冗余的代码放到了一个package下，让其它package去继承，也能实现减少冗余 -->
+	<package name="view" extends="struts-default">
+		<global-results>
+			<result name="success">welcome.jsp</result>
+			<result name="fail">fail.jsp</result>
+		</global-results>
+	</package>
+	<package name="actionpackage" namespace="/" extends="view">
+		<action name="doone" class="com.zfw.struts.LoginAction" method="doOne" />
+		<action name="dotwo" class="com.zfw.struts.LoginAction" method="doTwo">
+			<result name="old">old.jsp</result>
+		</action>
+	</package>
+
+
+</struts>

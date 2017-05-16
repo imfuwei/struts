@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="05-struts2-resut-type-chain"
+  id="myeclipse.1489904055804"
+  context-root="/05-struts2-resut-type-chain"
+  j2ee-spec="5.0"
+  archive="05-struts2-resut-type-chain.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

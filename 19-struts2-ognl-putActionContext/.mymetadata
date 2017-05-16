@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="19-struts2-ognl-putActionContext"
+  id="myeclipse.1490163854097"
+  context-root="/19-struts2-ognl-putActionContext"
+  j2ee-spec="5.0"
+  archive="19-struts2-ognl-putActionContext.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

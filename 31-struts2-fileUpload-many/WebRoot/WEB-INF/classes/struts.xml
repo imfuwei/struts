@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+<!-- 注意，多文件上传时，他们是总大小才是这个参数 -->
+<constant name="struts.multipart.maxSize" value="2097152000"/>
+	<package name="demo" namespace="/" extends="struts-default">
+		<action name="upload" class="com.zfw.actions.UploadAction">
+			<result>success.jsp</result>
+			<result name="fail">fail.jsp</result>
+			<interceptor-ref name="defaultStack">
+			<param name="fileUpload.allowedExtensions">png,rar,txt,mp4</param>
+			</interceptor-ref>
+		</action>
+	</package>
+</struts>

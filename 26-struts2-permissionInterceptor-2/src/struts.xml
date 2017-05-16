@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="demo" namespace="/" extends="struts-default">
+		<!-- 第二种方法注册拦截器，声明拦截栈，然后再在action中将此拦截栈加上 -->
+		<interceptors>
+			<interceptor name="permissionInterceptor"
+				class="com.zfw.intercepts.PermissionInterceptor" />
+
+			<interceptor-stack name="myStack">
+				<interceptor-ref name="permissionInterceptor" />
+				<interceptor-ref name="defaultStack" />
+			</interceptor-stack>
+		</interceptors>
+
+		<action name="login" class="com.zfw.actions.LoginAction"
+			method="doOne">
+			<result name="success">welcome.jsp</result>
+			<result name="fail">fail.jsp</result>
+			<!-- 引用拦截器栈 -->
+			<interceptor-ref name="myStack" />
+		</action>
+	</package>
+</struts>

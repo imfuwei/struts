@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="demo" namespace="/" extends="struts-default">
+		<interceptors>
+			<interceptor name="myInterceptor" class="com.zfw.intercepts.MethodInterceptor">
+				<param name="includeMethods">doOne,doTwo</param>
+			</interceptor>
+			<interceptor-stack name="myInterceptorStack">
+				<interceptor-ref name="myInterceptor" />
+				<interceptor-ref name="defaultStack" />
+			</interceptor-stack>
+		</interceptors>
+
+		<action name="login_*" class="com.zfw.actions.LoginAction"
+			method="{1}">
+			<result name="success">welcome.jsp</result>
+			<result name="fail">fail.jsp</result>
+			<interceptor-ref name="myInterceptorStack" />
+		</action>
+	</package>
+</struts>

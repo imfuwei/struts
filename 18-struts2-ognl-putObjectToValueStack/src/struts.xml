@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="demo" namespace="/" extends="struts-default">
+		<action name="login" class="com.zfw.struts.LoginAction" method="doOne">
+			<result>valuestack.jsp</result>
+		</action>
+		<action name="login2" class="com.zfw.struts.LoginAction" method="doTwo">
+			<result>valuestack2.jsp</result>
+		</action>
+		<action name="login3" class="com.zfw.struts.LoginAction" method="doThree">
+			<result>valuestack3.jsp</result>
+		</action>
+		<action name="login4" class="com.zfw.struts.LoginAction" method="doFour">
+			<result>valuestack4.jsp</result>
+		</action>
+	</package>
+</struts>

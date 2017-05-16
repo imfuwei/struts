@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<!-- 把配置文件放入包中也行 -->
+	<!-- <include file="struts-config/struts-base.xml" />
+	<include file="struts-config/struts-actions.xml" />
+	 -->
+	<!-- 采用通配符进行包含，这样也可以 -->
+	<include file="struts-config/struts-*.xml"/>
+</struts>

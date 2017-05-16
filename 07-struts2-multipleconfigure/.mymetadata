@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="07-struts2-multipleconfigure"
+  id="myeclipse.1490006819709"
+  context-root="/07-struts2-multipleconfigure"
+  j2ee-spec="5.0"
+  archive="07-struts2-multipleconfigure.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

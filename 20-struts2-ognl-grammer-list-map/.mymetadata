@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="20-struts2-ognl-grammer-list-map"
+  id="myeclipse.1490163854097"
+  context-root="/20-struts2-ognl-grammer-list-map"
+  j2ee-spec="5.0"
+  archive="20-struts2-ognl-grammer-list-map.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

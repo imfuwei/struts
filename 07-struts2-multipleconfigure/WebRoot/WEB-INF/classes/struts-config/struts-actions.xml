@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="Action" namespace="/" extends="MyBase">
+		<action name="doone" class="com.zfw.struts.LoginAction" method="doOne" />
+		<action name="dotwo" class="com.zfw.struts.LoginAction" method="doTwo">
+			<result name="old">old.jsp</result>
+		</action>
+	</package>
+</struts>

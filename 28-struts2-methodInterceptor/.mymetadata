@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="28-struts2-methodInterceptor"
+  id="myeclipse.1490506614270"
+  context-root="/28-struts2-methodInterceptor"
+  j2ee-spec="5.0"
+  archive="28-struts2-methodInterceptor.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

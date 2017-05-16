@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="11-struts2-receiveCollection"
+  id="myeclipse.1490083437797"
+  context-root="/11-struts2-receiveCollection"
+  j2ee-spec="5.0"
+  archive="11-struts2-receiveCollection.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

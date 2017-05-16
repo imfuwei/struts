@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="17-struts2-ognl-getValueStack"
+  id="myeclipse.1490163854097"
+  context-root="/17-struts2-ognl-getValueStack"
+  j2ee-spec="5.0"
+  archive="17-struts2-ognl-getValueStack.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

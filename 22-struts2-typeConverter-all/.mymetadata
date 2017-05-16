@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="22-struts2-typeConverter-all"
+  id="myeclipse.1489904055804"
+  context-root="/22-struts2-typeConverter-all"
+  j2ee-spec="5.0"
+  archive="22-struts2-typeConverter-all.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

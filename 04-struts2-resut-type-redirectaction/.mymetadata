@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="04-struts2-resut-type-redirectaction"
+  id="myeclipse.1489904055804"
+  context-root="/04-struts2-resut-type-redirectaction"
+  j2ee-spec="5.0"
+  archive="04-struts2-resut-type-redirectaction.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

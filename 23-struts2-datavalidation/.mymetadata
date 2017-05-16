@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="23-struts2-datavalidation"
+  id="myeclipse.1490420480551"
+  context-root="/23-struts2-datavalidation"
+  j2ee-spec="5.0"
+  archive="23-struts2-datavalidation.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
